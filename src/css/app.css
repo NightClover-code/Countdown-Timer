@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap");
+.countdown__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.countdown__container .countdown__card {
+  width: 20%;
+}
+
+.countdown__container .countdown__card .countdown__card__bg {
+  position: relative;
+  height: 0;
+  padding-bottom: 100%;
+  background-color: #343650;
+  -webkit-box-shadow: 0px 8px 0px 1px #191a24;
+          box-shadow: 0px 8px 0px 1px #191a24;
+  border-radius: 10px;
+  -webkit-transition: all 0.175s linear;
+  transition: all 0.175s linear;
+}
+
+.countdown__container .countdown__card .countdown__card__bg::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: calc(50% - 1vh);
+  width: 6px;
+  height: 12px;
+  border-radius: 0 15px 15px 0;
+  background-color: #191a24;
+  z-index: 10;
+}
+
+.countdown__container .countdown__card .countdown__card__bg::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: calc(50% - 1vh);
+  width: 6px;
+  height: 12px;
+  border-radius: 15px 0 0 15px;
+  background-color: #191a24;
+  z-index: 10;
+}
+
+.countdown__container .countdown__card .countdown__card__bg .countdown__card__number {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  font-size: 8vw;
+  color: #fb6087;
+}
+
+.countdown__container .countdown__card .countdown__card__bg .countdown__card__number::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #1e1f29;
+  opacity: 0.35;
+  z-index: 10;
+}
+
+.countdown__container .countdown__card__label {
+  padding-top: 1.5rem;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  letter-spacing: 5px;
+  color: #8486a9;
+}
+
+.rotate {
+  -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
+}
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10rem;
+}
+
+.social-links .icon {
+  list-style: none;
+}
+
+.social-links .icon:hover svg path {
+  fill: #fb6087;
+}
+
+.social-links .icon svg path {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.attribution {
+  text-align: center;
+  padding: 2rem;
+}
+
+.attribution a {
+  color: #8486a9;
+  letter-spacing: 1px;
+}
+
+.app-container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.container main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-width: 350px;
+  width: 75%;
+  max-width: 1100px;
+  height: auto;
+  margin: 0 auto 0;
+  text-align: center;
+  padding: 6rem 0 0;
+}
+
+.container main h2 {
+  text-align: center;
+  font-size: calc(0.75rem + 1vw);
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  padding-bottom: 4rem;
+}
+/*# sourceMappingURL=app.css.map */

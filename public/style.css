@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --dark-blue: hsl(235, 16%, 14%);
+}
+body {
+  background: url('./images/pattern-hills.svg') bottom right 20% no-repeat,
+    url('./images/bg-stars.svg');
+  background-color: var(--dark-blue);
+  background-size: 100%;
+  min-height: 100vh;
+  font-family: 'Red Hat Text', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 14px;
+}

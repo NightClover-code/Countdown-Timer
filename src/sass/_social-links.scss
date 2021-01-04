@@ -1,0 +1,16 @@
+.social-links {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  width: 10rem;
+  .icon {
+    list-style: none;
+    &:hover svg path {
+      fill: $soft-red;
+    }
+    svg path {
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}

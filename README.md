@@ -4,9 +4,9 @@
 
 ## The challenge
 
-The challenge is to build out this countdown timer and get it looking as close to the design as possible.
+The challenge was to build out this countdown timer and get it looking as close to the design as possible.
 
-Users are able to:
+What users can do on this page:
 
 - See hover states for all interactive elements on the page
 - See a live countdown timer that ticks down every second (start the count at 14 days)

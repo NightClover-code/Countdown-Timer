@@ -2,7 +2,7 @@ import React from 'react';
 
 const Attribution = () => {
   return (
-    <div class="attribution">
+    <div className="attribution">
       Challenge by
       <a
         href="https://www.frontendmentor.io?ref=challenge"
@@ -14,10 +14,7 @@ const Attribution = () => {
       </a>
       .<br />
       Coded by{' '}
-      <a href="https://github.com/NightClover-code">
-        NightClover-code
-      </a>
-      .
+      <a href="https://github.com/NightClover-code">NightClover-code</a>.
     </div>
   );
 };
